@@ -19,7 +19,7 @@
   - `\r` => Carriage return
   - `\n` => Newline
   - `\cA : \cZ` => Control characters
-  - \x0000 : \xFFFF` => Unicode hexadecimal
+  - `\x0000 : \xFFFF` => Unicode hexadecimal
   - `\x00 : \xFF` => ASCII hexadecimal
   - `.` => Any character, except for newline (\n)
   - `\d` => Any decimal digit; equivalent to [0-9]
@@ -30,3 +30,6 @@
   - `\S` => Any character but a whitespace character
   - `\b` => A word boundary
   - `\B` => Not a word boundary (inside a word)
+* `/(ab)+/` matches one or more consecutive occurrences of the substring `ab`
+* Back Reference: An example could be `/^([dtn])a\1/`, which matches a string that starts with any of the `d`, `t`, or `n` characters, followed by an `a`, followed by whatever character matched the first capture. This latter point is important! This isn't the same as `/[dtn] a[dtn]/`. The character following the `a` can't be any of `d`, or `t`, or `n`, but must be whichever one of those triggered the match for the first character. As such, which character the `\1` will match can't be known until evaluation time.
+* 
