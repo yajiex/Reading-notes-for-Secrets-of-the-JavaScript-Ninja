@@ -1,5 +1,5 @@
 # Chapter 4: Wielding functions
-* 
+* The `!!` construct is a simple way of turning any JavaScript expression into its Boolean equivalent
 * Make use of function properties:
       var store = {
         nextId: 1,
