@@ -38,3 +38,20 @@
 * The array returned by match always includes the entire match in the first index, and then each subsequent capture following.
 * Using a local regular expression (one without the global flag) with the String object's `match()` methods returns an array containing the entire matched string, along with any matched captures in the operation. But when we supply a global regular expression (one with the `g` flag included), `match()` returns something rather different. It's still an array of results, but in the case of a global regular expression, which matches all possibilities in the candidate string rather than just the first match, the array returned contains the global matches; captures within each match aren't returned in this case.
 * `exec()` can be repeatedly called against a regular expression, causing it to return the next matched set of information every time it's called.
+* There's a way to get capture references within the replace string of a call to the `replace()` method. Instead of using the backreference codes, we use the syntax of `$1`, `$2`, `$3`, up through each capture number. Here's an example of such usage:
+      assert("fontFamily".replace(/([A-Z])/g, "-$1").toLowerCase() == "font-family", "Convert the camelCase into dashed notation.");
+* To allow us to indicate that a set of parentheses should not result in a capture, the regular expression syntax lets us put the notation `?:` immediately after the opening parenthesis. This is known as a passive subexpression. `var pattern = /((?:ninja-)+)sword/;` causes only the outer set of parentheses to create a capture. The inner parentheses have been converted to a passive subexpression.
+* `replace()` has the ability to provide a function as the replacement value rather than a fixed string. When the replacement value (the second argument) is a function, it's invoked for each match found (remember that a global search will match all instances of the pattern in the source string) with a variable list of parameter, the value returned from the function serves as the replacement value.
+  - The full text of the match
+  - The captures of the match, one parameter for each
+  - The index of the match within the original string
+  - The source string
+* Trimming a string:
+  1. `(str || "").replace(/^\s+|\s+$/g, "");`
+  2. `str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');`
+  3.  `var str = str.replace(/^\s\s*/, ''), ws = /\s/, i = str.length; while (ws.test(str.charAt(--i))); return str.slice(0, i + 1);`
+* Matching newlines:
+  1. `/[\S\s]*/`
+  2. `/(?:.|\s)*/`
+* Unicode: `/[\w\u0080-\uFFFF_-]+/`. Includes the entire range of Unicode characters in the match by creating a character class that includes the `\w` term, to match all the "normal" word characters, plus a range that spans the entire set of Unicode characters above character code 128 (hex 0x80). Starting at 128 gives us some high ASCII characters along with all Unicode characters. The astute among you might note that by adding the entire range of Unicode haracters above \u0080, we match not only alphabetic characters, but also all Unicode unctuation and other special characters (arrows, for example).
+* Escaped characters: `/^((\w+)|(\\.))+$/`, this regular expression allows any sequence composed of a sequence of word characters, a backslash followed by any character (even a backslash), or both
