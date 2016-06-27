@@ -35,3 +35,17 @@
           getElements.cache[name] ||
           document.getElementsByTagName(name);
         }
+* Within a function, we can determine two things about its arguments:
+  1. How many named parameters it was declared with, via the `length` property
+  2. How many arguments were passed on the invocation, via `arguments.length`
+* A method-overloading function:
+      function addMethod(object, name, fn) {
+        var old = object[name];
+        object[name] = function(){
+          if (fn.length == arguments.length)
+            return fn.apply(this, arguments)
+          else if (typeof old == 'function')
+            return old.apply(this, arguments);
+        };
+      }
+      
