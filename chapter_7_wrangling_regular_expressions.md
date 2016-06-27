@@ -11,4 +11,25 @@
   4. We can specify a fixed number of repetitions with the number of allowed repetitions between braces. For example, `/a{4}/` indicates a match on four consecutive `a` characters.
   5. We can also specify a range for the repetition count by specifying the range with a comma separator. For example, `/a{4,10}/` matches any string of four through ten consecutive `a` characters.
   6. The second value in a range can be omitted (but leaving the comma) to indicate an open-ended range. The regex `/a{4,}/` matches any string of four or more consecutive `a` characters.
-* 
+* Predefined character class and character terms:
+  Predefined term Matches
+  \t Horizontal tab
+  \b Backspace
+\v Vertical tab
+\f Form feed
+\r Carriage return
+\n Newline
+\cA : \cZ Control characters
+\x0000 : \xFFFF Unicode hexadecimal
+\x00 : \xFF ASCII hexadecimal
+. Any character, except for newline (\n)
+\d Any decimal digit; equivalent to [0-9]
+\D Any character but a decimal digit; equivalent to [^0-9]
+\w Any alphanumeric character including underscore; equivalent to
+[A-Za-z0-9_]
+\W Any character but alphanumeric and underscore characters; equivalent
+to [^A-Za-z0-9_]
+\s Any whitespace character (space, tab, form feed, and so on)
+\S Any character but a whitespace character
+\b A word boundary
+\B Not a word boundary (inside a word)
