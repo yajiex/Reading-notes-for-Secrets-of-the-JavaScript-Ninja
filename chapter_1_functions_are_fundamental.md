@@ -1,2 +1,2 @@
-# Chapter 1: Functions are fundamental
+# Chapter 3: Functions are fundamental
 
