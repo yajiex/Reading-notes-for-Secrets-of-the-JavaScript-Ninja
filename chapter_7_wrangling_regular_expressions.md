@@ -32,4 +32,9 @@
   - `\B` => Not a word boundary (inside a word)
 * `/(ab)+/` matches one or more consecutive occurrences of the substring `ab`
 * Back Reference: An example could be `/^([dtn])a\1/`, which matches a string that starts with any of the `d`, `t`, or `n` characters, followed by an `a`, followed by whatever character matched the first capture. This latter point is important! This isn't the same as `/[dtn] a[dtn]/`. The character following the `a` can't be any of `d`, or `t`, or `n`, but must be whichever one of those triggered the match for the first character. As such, which character the `\1` will match can't be known until evaluation time.
-* 
+* `/<(\w+)>(.+)<\/\1>/` => matching XML-type markup elements.
+* Compiling a regex once and storing it in a variable for later reference can be an important optimization.
+* Each regex has a unique object representation: every time a regular expression is created (and thus compiled), a new regular expression object is created. This is unlike other primitive types (like string, number, and so on) because the result will always be unique.
+* The array returned by match always includes the entire match in the first index, and then each subsequent capture following.
+* Using a local regular expression (one without the global flag) with the String object's `match()` methods returns an array containing the entire matched string, along with any matched captures in the operation. But when we supply a global regular expression (one with the `g` flag included), `match()` returns something rather different. It's still an array of results, but in the case of a global regular expression, which matches all possibilities in the candidate string rather than just the first match, the array returned contains the global matches; captures within each match aren't returned in this case.
+* `exec()` can be repeatedly called against a regular expression, causing it to return the next matched set of information every time it's called.
