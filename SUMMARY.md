@@ -10,5 +10,5 @@
 * [Chapter 9: Runtime code evaluation](chapter_9_runtime_code_evaluation.md)
 * [Chapter 10: With statements](chapter_10_with_statements.md)
 * [Chapter 11: Developing cross-browser strategies](chapter_11_developing_cross-browser_strategies.md)
-* Chapter 12: Cutting through attributes, properties, and CSS
+* [Chapter 12: Cutting through attributes, properties, and CSS](chapter_12_cutting_through_attributes,_properties,.md)
 
