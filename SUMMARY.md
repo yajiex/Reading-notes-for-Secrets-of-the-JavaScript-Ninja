@@ -6,5 +6,5 @@
 * [Chapter 5: Closing in on closures](chapter_5_closing_in_on_closures.md)
 * [Chapter 7: Wrangling regular expressions](chapter_7_wrangling_regular_expressions.md)
 * [Chapter 8: Taming threads and timers](chapter_8_taming_threads_and_timers.md)
-* Chapter 6: Object-orientation with prototypes
+* [Chapter 6: Object-orientation with prototypes](chapter_6_object-orientation_with_prototypes.md)
 
