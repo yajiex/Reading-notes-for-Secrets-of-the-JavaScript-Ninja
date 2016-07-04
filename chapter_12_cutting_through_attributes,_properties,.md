@@ -14,3 +14,5 @@
       frameborder => frameBorder
       contenteditable => contentEditable
 * In general, `property` access is faster than the corresponding DOM `attribute` methods
+* when accessing a `property` that references a URL (such as `href`, `src`, or `action`) the URL value is automatically converted from its original form into a full canonical URL.
+* 
