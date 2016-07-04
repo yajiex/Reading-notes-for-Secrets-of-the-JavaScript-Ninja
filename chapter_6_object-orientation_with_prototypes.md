@@ -6,3 +6,4 @@
 * We advise strongly against to use the `Person` prototype object directly as the `Ninja` prototype, like this: `Ninja.prototype = Person.prototype;`. By doing this, any changes to the `Ninja` prototype will also change the `Person` prototype because they're the same object, and that's bound to have undesirable side effects.
 * JavaScript provides a method called `hasOwnProperty()`, which can be used to determine whether properties are actually defined on an object instance versus imported from a prototype.
 * The expression `this instanceof arguments.callee` will evaluate to `true` when executed within a constructor, but `false` when executed within a regular function.
+* 
