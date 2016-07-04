@@ -1,5 +1,7 @@
 # Chapter 5: Closing in on closures
 * A `closure` is the scope created when a function is declared that allows the function to access and manipulate variables that are external to that function. A declared function can be called at any later time, even after the scope in which it was declared has gone away.
+* In JavaScript, variables are scoped based upon the `closure` they're in.
+* `closures` remember references to included variables—not just their values at the time at which they're created.
 * A polyfill for `Function.prototype.bind`:
       Function.prototype.bind = function(){
           var fn = this,
