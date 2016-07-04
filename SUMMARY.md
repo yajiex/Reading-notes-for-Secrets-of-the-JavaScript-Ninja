@@ -13,5 +13,5 @@
 * [Chapter 12: Cutting through attributes, properties, and CSS](chapter_12_cutting_through_attributes,_properties,.md)
 * [Chapter 13: Surviving events](chapter_13_surviving_events.md)
 * [Chapter 14: Manipulating the DOM](chapter_14_manipulating_the_dom.md)
-* Chapter 15: CSS selector engines
+* [Chapter 15: CSS selector engines](chapter_15_css_selector_engines.md)
 
