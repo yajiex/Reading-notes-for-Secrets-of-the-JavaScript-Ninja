@@ -14,4 +14,5 @@
 * [Chapter 13: Surviving events](chapter_13_surviving_events.md)
 * [Chapter 14: Manipulating the DOM](chapter_14_manipulating_the_dom.md)
 * [Chapter 15: CSS selector engines](chapter_15_css_selector_engines.md)
+* Chapter 1: Enter the ninja
 
