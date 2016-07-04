@@ -9,5 +9,5 @@
 * [Chapter 8: Taming threads and timers](chapter_8_taming_threads_and_timers.md)
 * [Chapter 9: Runtime code evaluation](chapter_9_runtime_code_evaluation.md)
 * [Chapter 10: With statements](chapter_10_with_statements.md)
-* Chapter 11: Developing cross-browser strategies
+* [Chapter 11: Developing cross-browser strategies](chapter_11_developing_cross-browser_strategies.md)
 
