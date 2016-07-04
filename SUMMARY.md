@@ -15,5 +15,5 @@
 * [Chapter 14: Manipulating the DOM](chapter_14_manipulating_the_dom.md)
 * [Chapter 15: CSS selector engines](chapter_15_css_selector_engines.md)
 * [Chapter 1: Enter the ninja](chapter_1_enter_the_ninja.md)
-* Chapter 2: Arming with testing and debugging
+* [Chapter 2: Arming with testing and debugging](chapter_2_arming_with_testing_and_debugging.md)
 
