@@ -22,3 +22,11 @@
   3. Set `position` to `absolute`.
   4. Grab the dimension values.
   5. Restore the changed properties.
+* CSS3 color formats:
+  - keyword: Any of the recognized HTML color keywords (`red`, `green`, `maroon`, and so on), extended SVG color keywords (`bisque`, `chocolate`, `darkred`, and so on), or the keyword `transparent` (which is equivalent to `rgba(0,0,0,0)`—see below).
+  - `#rgb`: Short hexadecimal RGB (`red`, `green`, `blue`) color values, where each portion is a value from 0 to f.
+  - `#rrggbb`: Long hexadecimal RGB (`red`, `green`, `blue`) color values, where each portion is a value from 00 to ff.
+  - `rgb(r, g, b)`: RGB notation where each value is a decimal value from 0 to 255, or 0% to 100%.
+  - `rgba(r, g, b, a)`: RGB notation with the addition of an alpha channel. The alpha value ranges from 0.0 (transparent) to 1.0 (fully opaque).
+  - `hsl(h, s, l)`: HSL notation where the values represent hue, saturation, and lightness. The hue value ranges from 0 to 360 (the angle on the color wheel), and saturation and lightness range from 0% to 100%.
+  - `hsla(h, s, l, a)`: HSL notation with the addition of the alpha channel.
