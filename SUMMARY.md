@@ -8,4 +8,5 @@
 * [Chapter 7: Wrangling regular expressions](chapter_7_wrangling_regular_expressions.md)
 * [Chapter 8: Taming threads and timers](chapter_8_taming_threads_and_timers.md)
 * [Chapter 9: Runtime code evaluation](chapter_9_runtime_code_evaluation.md)
+* Chapter 10: With statements
 
