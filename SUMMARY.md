@@ -11,5 +11,5 @@
 * [Chapter 10: With statements](chapter_10_with_statements.md)
 * [Chapter 11: Developing cross-browser strategies](chapter_11_developing_cross-browser_strategies.md)
 * [Chapter 12: Cutting through attributes, properties, and CSS](chapter_12_cutting_through_attributes,_properties,.md)
-* Chapter 13: Surviving events
+* [Chapter 13: Surviving events](chapter_13_surviving_events.md)
 
